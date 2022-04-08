@@ -77,6 +77,10 @@ ul {
 
 /*-----------------HERO--------------------------*/
 
+.hero {
+    background-color: #2F303A;
+}
+
 .hero-title {
     font-style: normal;
     font-weight: 900;
@@ -175,13 +179,17 @@ ul {
 
 /*-----------------FOOTER------------------------*/
 
+.footer-section {
+    background-color: #2F303A;
+}
+
 .footer-logo {
     color: #2196f3;
     font-family: Raleway, sans-serif;
 }
 
 .accent-logo {
-    color: #000000;
+    color: #ffffff;
     font-family: Raleway, sans-serif;
 }
 
@@ -200,5 +208,5 @@ ul {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: rgba(177, 113, 15, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
