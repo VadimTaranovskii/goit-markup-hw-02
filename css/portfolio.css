@@ -138,7 +138,15 @@ ul {
     color: #000000;
 }
 
-.contact-adress {
+.adress,
+.contact-adress .contact-link:hover,
+.contact-adress .contakt-link:focus {
+    color: #2196f3;
+}
+
+.adress,
+.contact-adress .contact-link,
+.contact-adress .contakt-link {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
