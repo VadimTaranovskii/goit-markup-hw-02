@@ -19,7 +19,7 @@ body {
 ul {
     list-style: none;
 }
-
+/**/
 /*-----------------LOGO------------------------*/
 
 .header-logo {
@@ -29,7 +29,6 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    text-decoration: none;
 }
 
 .logo-accent {
@@ -39,7 +38,6 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    text-decoration: none;
 }
 
 /*-----------------HEADER-------------------*/
@@ -75,9 +73,7 @@ ul {
 
 /*-----------------HERO--------------------------*/
 
-.hero {
-    background-color: var(--background-color);
-}
+
 
 .hero-title {
     font-weight: 900;
@@ -86,7 +82,7 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
+
 }
 
 .hero-button {
@@ -94,7 +90,7 @@ ul {
     color: var(--light-color);
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;    
+    line-height: 1.87;
     display: flex;
     align-items: center;
     text-align: center;
@@ -126,6 +122,7 @@ ul {
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
+
 /*-----------------SERVICE-----------------------*/
 
 .work-title {
@@ -291,7 +288,7 @@ ul {
 }
 
 .filter-button .filter-link:active {
-    color: #ffffff 
+    color: #ffffff
 }
 
 /*---font-family: inherit;---*/
