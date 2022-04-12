@@ -19,7 +19,11 @@ body {
 ul {
     list-style: none;
 }
-/**/
+
+.pointer {
+    cursor: pointer
+}
+
 /*-----------------LOGO------------------------*/
 
 .header-logo {
