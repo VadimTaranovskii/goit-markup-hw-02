@@ -29,6 +29,7 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .logo-accent {
@@ -38,7 +39,9 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
+
 /*-----------------HEADER-------------------*/
 
 .header-item .link:hover,
@@ -171,11 +174,13 @@ ul {
 .footer-logo {
     color: var(--main-color);
     font-family: Raleway, sans-serif;
+    text-decoration: none;
 }
 
 .accent-logo {
     color: var(--light-color);
     font-family: Raleway, sans-serif;
+    text-decoration: none;
 }
 
 .adress-title {
