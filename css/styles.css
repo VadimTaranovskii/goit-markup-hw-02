@@ -5,15 +5,15 @@
     --text-color: #757575;
     --light-color: #ffffff;
     --background-color: #2F303A;
+    --onetime-color: #f5f4fa;
+    --buttomhover-color: #188CE8;
 }
 
 body {
-    background-color: #fff;
     color: var(--main-color);
     font-family: Roboto, sans-serif;
-    font-weight: 400, Regular;
+    font-weight: 400;
     font-style: normal;
-    color: var(--main-color);
 }
 
 ul {
@@ -26,22 +26,23 @@ ul {
 
 /*-----------------LOGO------------------------*/
 
-.header-logo {
-    color: var(--main-color);
-    font-family: Raleway, sans-serif;
+.header-logo,
+.logo-accent {
+    font-family: Raleway,sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.header-logo {
+    color: var(--main-color);
 }
 
 .logo-accent {
     color: var(--secondary-color);
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
 /*-----------------HEADER-------------------*/
@@ -77,8 +78,6 @@ ul {
 
 /*-----------------HERO--------------------------*/
 
-
-
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -86,7 +85,6 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
 }
 
 .hero-button {
@@ -99,6 +97,11 @@ ul {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-buttom:focus {
+    background-color: var(--buttomhover-color);
 }
 
 /*-----------------FEATURES----------------------*/
@@ -168,27 +171,37 @@ ul {
 
 /*-----------------FOOTER------------------------*/
 
+.footer-logo,
+.accent-logo {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
 .footer-section {
     background-color: var(--background-color);
 }
 
 .footer-logo {
     color: var(--main-color);
-    font-family: Raleway, sans-serif;
     text-decoration: none;
 }
 
 .accent-logo {
     color: var(--light-color);
-    font-family: Raleway, sans-serif;
     text-decoration: none;
 }
 
 .adress-title {
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--secondary-color);
+    color: var(--light-color);
 }
 
 .adress,
@@ -207,29 +220,29 @@ ul {
 }
 
 
-
-
-
 /*----------PORTFOLIO BEGINING-------------*/
-
 /*-----------------LOGO------------------------*/
 
-.header-logo {
-    color: var(--main-color);
+
+.header-logo,
+.logo-accent {
     font-family: Raleway, sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.header-logo {
+    color: var(--main-color);
+    text-decoration: none;
 }
 
 .logo-accent {
     color: var(--secondary-color);
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 /*-----------------HEADER-------------------*/
@@ -264,7 +277,6 @@ ul {
 }
 
 /*-----------------FILTER------------------------*/
-
 .hidden-gallery {
     width: 1px;
     height: 1px;
@@ -278,21 +290,32 @@ ul {
     color: var(--light-color);
 }
 
-.filter-button .filter-link:hover,
-.filter-button .filter-link:focus {
-    background-color: var(--main-color)
-}
-
 .filter-link {
-    background-color: #f5f4fa;
+    background-color: var(--onetime-color);
 }
 
 .filter-link:active {
     background-color: var(--main-color);
 }
 
+.filter-button .filter-link:hover,
+.filter-button .filter-link:focus {
+    background-color: var(--main-color)
+}
+
 .filter-button .filter-link:active {
-    color: #ffffff
+    color: var(--light-color)
+}
+
+.button,
+.filter-button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 /*---font-family: inherit;---*/
@@ -315,25 +338,36 @@ ul {
 
 /*-----------------FOOTER------------------------*/
 
+
 .footer-section {
     background-color: var(--background-color);
 }
 
+.footer-logo,
+.accent-logo {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
 .footer-logo {
     color: var(--main-color);
-    font-family: Raleway, sans-serif;
 }
 
 .accent-logo {
     color: #ffffff;
-    font-family: Raleway, sans-serif;
 }
 
 .adress-title {
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--secondary-color);
+    color: var(--light-color);
 }
 
 .adress,
