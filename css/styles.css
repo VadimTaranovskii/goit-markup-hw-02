@@ -440,17 +440,18 @@ html {
     color: var(--main-color);
 }
 
+.footer-section {
+    background-color: var(--background-color);
+    outline: 2px solid #ed0a0a;
+    
+}
+
 .adress,
-.contact-adress .contact-link,
-.contact-adress .contakt-link {
+.contact-adress .contact-link {
+    font-style: normal;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-section {
-    background-color: var(--background-color);
-    outline: 2px solid #ed0a0a;
 }
