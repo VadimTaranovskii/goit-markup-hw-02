@@ -24,6 +24,16 @@ ul {
     cursor: pointer
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /*-----------------LOGO------------------------*/
 
 .header-logo,
@@ -57,6 +67,7 @@ ul {
     font-size: 14px;
     line-height: 1.14px;
     letter-spacing: 0.02em;
+    text-decoration: none;
     color: var(--headertext-color);
 }
 
@@ -73,18 +84,33 @@ ul {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
     color: var(--text-color);
+}
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+    outline: 2px solid #ed0a0a;
+}
+
+.link.current {
+    color: var(--main-color)
 }
 
 /*-----------------HERO--------------------------*/
 
 .hero-title {
+    font-family: Roboto, sans-serif;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    width: 696px;
+    height: 120px;
+    /*margin: 200px 452px 280px 452px;*/
+    outline: 2px solid #ed0a0a;
 }
 
 .hero-button {
@@ -95,13 +121,22 @@ ul {
     line-height: 1.87;
     display: flex;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
+    /*margin: 350px 700px 200px 700px;*/
+    outline: 2px solid #ed0a0a;
 }
+/*text-align: center;*/
+
 
 .hero-button:hover,
 .hero-buttom:focus {
     background-color: var(--buttomhover-color);
+}
+
+.hero {
+    /*padding: 20px;*/
+    /*position: absolute;*/
+    background-color: var(--background-color);
 }
 
 /*-----------------FEATURES----------------------*/
@@ -130,6 +165,10 @@ ul {
     color: var(--text-color);
 }
 
+.features {
+    outline: 2px solid #ed0a0a;
+}
+
 /*-----------------SERVICE-----------------------*/
 
 .work-title {
@@ -139,6 +178,10 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
+}
+
+.work {
+    outline: 2px solid #ed0a0a;
 }
 
 /*-----------------TEAM-SPACE--------------------*/
@@ -169,6 +212,10 @@ ul {
     color: var(--text-color);
 }
 
+.team {
+    outline: 2px solid #ed0a0a;
+}
+
 /*-----------------FOOTER------------------------*/
 
 .footer-logo,
@@ -180,10 +227,6 @@ ul {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
-}
-
-.footer-section {
-    background-color: var(--background-color);
 }
 
 .footer-logo {
@@ -219,6 +262,10 @@ ul {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-section {
+    background-color: var(--background-color);
+    outline: 2px solid #ed0a0a;
+}
 
 /*----------PORTFOLIO BEGINING-------------*/
 /*-----------------LOGO------------------------*/
@@ -246,6 +293,7 @@ ul {
 }
 
 /*-----------------HEADER-------------------*/
+
 
 .header-item .link:hover,
 .header-item .link:focus {
@@ -276,14 +324,15 @@ ul {
     color: var(--text-color);
 }
 
-/*-----------------FILTER------------------------*/
-.hidden-gallery {
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    opacity: 0;
-    margin: -1px;
+.header {
+    outline: 2px solid #ed0a0a;
 }
+
+.link.current {
+    color: var(--main-color)
+}
+
+/*-----------------FILTER------------------------*/
 
 .filter-link:hover,
 .filter-link:focus {
@@ -307,6 +356,10 @@ ul {
     color: var(--light-color)
 }
 
+.filter {
+    outline: 2px solid #ed0a0a;
+}
+
 .button,
 .filter-button {
     font-family: 'Roboto';
@@ -316,6 +369,18 @@ ul {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.main {
+    outline: 2px solid #ed0a0a;
+}
+
+.hidden-gallery {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    margin: -1px;
 }
 
 /*---font-family: inherit;---*/
@@ -336,12 +401,11 @@ ul {
     color: var(--text-color);
 }
 
-/*-----------------FOOTER------------------------*/
-
-
-.footer-section {
-    background-color: var(--background-color);
+.gallery {
+    outline: 2px solid #ed0a0a;
 }
+
+/*-----------------FOOTER------------------------*/
 
 .footer-logo,
 .accent-logo {
@@ -382,5 +446,11 @@ ul {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-section {
+    background-color: var(--background-color);
+    outline: 2px solid #ed0a0a;
 }
