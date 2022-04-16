@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --main-color: #2196f3;
     --secondary-color: #000000;
@@ -22,10 +32,6 @@ ul {
 
 .pointer {
     cursor: pointer
-}
-
-html {
-    box-sizing: border-box;
 }
 
 *,
@@ -99,15 +105,24 @@ html {
 
 /*-----------------HERO--------------------------*/
 
+.hero {
+    /*padding: 20px;*/
+    /*position: absolute;*/
+    background-color: var(--background-color);
+    text-align: center;
+    width: 1600px;
+    height: 600px;
+}
+
 .hero-title {
     font-family: Roboto, sans-serif;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36px;
-    text-align: center;
     letter-spacing: 0.06em;
+    display: inline-block;
     text-transform: uppercase;
-    /*margin: 200px 452px 280px 452px;*/
+    margin: 200px 452px 280px 452px;
     outline: 2px solid #ed0a0a;
 }
 
@@ -123,18 +138,10 @@ html {
     /*margin: 350px 700px 200px 700px;*/
     outline: 2px solid #ed0a0a;
 }
-/*text-align: center;*/
-
 
 .hero-button:hover,
 .hero-buttom:focus {
     background-color: var(--buttomhover-color);
-}
-
-.hero {
-    /*padding: 20px;*/
-    /*position: absolute;*/
-    background-color: var(--background-color);
 }
 
 /*-----------------FEATURES----------------------*/
@@ -332,13 +339,20 @@ html {
 
 /*-----------------FILTER------------------------*/
 
+.filter-button .filter-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--onetime-color);
+}
+
 .filter-link:hover,
 .filter-link:focus {
     color: var(--light-color);
-}
-
-.filter-link {
-    background-color: var(--onetime-color);
 }
 
 .filter-link:active {
@@ -356,17 +370,6 @@ html {
 
 .filter {
     outline: 2px solid #ed0a0a;
-}
-
-.button,
-.filter-button {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .main {
