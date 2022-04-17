@@ -5,7 +5,7 @@ html {
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 :root {
@@ -24,20 +24,36 @@ body {
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-style: normal;
+    letter-spacing: 0.03em;
+    font-size: 14px;
 }
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h1,h2,h2,h4,h5,h6,p,ul{}
 
 ul {
     list-style: none;
 }
 
-.pointer {
-    cursor: pointer
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+.pointer {
+    cursor: pointer
 }
 
 /*-----------------LOGO------------------------*/
@@ -114,16 +130,23 @@ ul {
     height: 600px;
 }
 
+/*pond {
+    display: flex;
+    flex-wrap: wrap;
+}*/
+
 .hero-title {
-    font-family: Roboto, sans-serif;
+    
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 650px;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36px;
+    line-height: 1.36;
     letter-spacing: 0.06em;
-    display: inline-block;
-    text-transform: uppercase;
-    margin: 200px 452px 280px 452px;
     outline: 2px solid #ed0a0a;
+    margin: 0 auto;
+    
 }
 
 .hero-button {
@@ -135,7 +158,7 @@ ul {
     display: flex;
     align-items: center;
     letter-spacing: 0.06em;
-    /*margin: 350px 700px 200px 700px;*/
+    margin: 350px 700px 200px 700px;
     outline: 2px solid #ed0a0a;
 }
 
